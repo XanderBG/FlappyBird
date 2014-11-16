@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_fragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/userName"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/email"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/comboBox"
+        android:layout_gravity="center"
+        android:entries="@array/universities"
+        android:prompt="@string/uni_prompt"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/loginButton"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>
